@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<br><br>
+<div class="container-fluid" style="background-color: #a7d129">
+    <br>
+    <div class="card" style="background-color: #3e3636; color: white;">
+        <div class="card-body">
+            <h2>User Profile</h2>
+            <hr>
+            <p><strong>Username:</strong> {{ user.username }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            {% comment %} <p><strong>First Name:</strong> {{ user.first_name }}</p>
+            <p><strong>Last Name:</strong> {{ user.last_name }}</p> {% endcomment %}
+            <p><strong>Date Joined:</strong> {{ user.date_joined }}</p>
+            <p><strong>Last Login:</strong> {{ user.last_login }}</p>
+            <!-- Add more user info here if needed -->
+        </div>
+    </div>
+    <br>
+</div>
+{% endblock %}
